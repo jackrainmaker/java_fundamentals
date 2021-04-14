@@ -1,4 +1,7 @@
-class Main {
+package labs_examples.fundamentals.labs;
+
+public class Exercise_04 {
+
     public static void main(String[] args) {
 
         // please declare one or more variables of each primitive data type and print out their values
