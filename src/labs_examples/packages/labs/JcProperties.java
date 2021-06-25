@@ -3,8 +3,7 @@ package labs_examples.packages.labs;
 public class JcProperties {
 
     public static void main(String[] args) {
-        pricePerFootBuilding(200000, 3700);
-        pricePerFootLot(200000, 18000);
+
 
 
 
@@ -23,11 +22,11 @@ public class JcProperties {
 
         }
 
-        public static int pricePerFootBuilding(int price, int squareFootage){
+        protected static int pricePerFootBuilding(int price, int squareFootage){
             return price / squareFootage;
         }
 
-        public static int pricePerFootLot(int price, int lotSize){
+        protected static int pricePerFootLot(int price, int lotSize){
             return price / lotSize;
         }
 
