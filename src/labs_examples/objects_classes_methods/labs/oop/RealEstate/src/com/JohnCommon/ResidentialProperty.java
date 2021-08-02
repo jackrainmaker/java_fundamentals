@@ -59,4 +59,6 @@ public class ResidentialProperty extends DevelopedProperty {
         this.spa = spa;
         this.attachedGarage = attachedGarage;
     }
+
+
 }

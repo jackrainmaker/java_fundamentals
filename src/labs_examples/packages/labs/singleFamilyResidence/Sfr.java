@@ -24,9 +24,12 @@ public class Sfr extends JcProperties {
         try {
             int pPFB = pricePerFootBuilding(361800, 0);
             int pPFL = pricePerFootLot(361800, 6897);
-            System.out.println("Price per square foot building =$" + pPFB + ". Price per foot lot =$" + pPFL + ".");
+            System.out.println("Price per square foot building =$" + pPFB + "!");
+            System.out.println("Price per foot lot = $" + pPFL + "!");
         } catch (ArithmeticException badZero) {
+
             System.out.println("Lot size or building square footage cannot be Zero");
+            badZero.printStackTrace();
         }
         System.out.println("Just finished");
     }

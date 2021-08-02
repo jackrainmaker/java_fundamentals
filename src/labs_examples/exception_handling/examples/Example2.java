@@ -11,8 +11,8 @@ class ExcTest {
         System.out.println("Before exception is generated.");
 
         // generate an index out-of-bounds exception
-        nums[7] = 10;
-        System.out.println("this won't be displayed");
+        nums[0] = 10;
+        System.out.println("this won't be displayed " + nums[0]);
     }
 }
 
