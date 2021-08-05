@@ -1,15 +1,15 @@
 package labs_examples.packages.labs.commercialBuilding;
 
 
-import labs_examples.packages.labs.JcProperties;
+import labs_examples.packages.labs.Property;
 
 
-public class CommercialProperties extends JcProperties {
+public class CommercialProperty extends Property {
     boolean elevator;
     boolean parking;
     int numberParkinSpaces;
 
-    public CommercialProperties(int levels, int squareFootage, int lotSize, int price, boolean elevator, boolean parking, int numberParkinSpaces) {
+    public CommercialProperty(int levels, int squareFootage, int lotSize, int price, boolean elevator, boolean parking, int numberParkinSpaces) {
         super(levels, squareFootage, lotSize, price);
         this.elevator = elevator;
         this.parking = parking;
@@ -29,7 +29,7 @@ public class CommercialProperties extends JcProperties {
 
         System.out.println("process completed");
 
-        CommercialProperties bridgeViewRd = new CommercialProperties(4,12000,37000,12000000,true,true,112);
+        CommercialProperty bridgeViewRd = new CommercialProperty(4,12000,37000,12000000,true,true,112);
 
 
 

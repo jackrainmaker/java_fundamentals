@@ -1,8 +1,8 @@
 package labs_examples.packages.labs.singleFamilyResidence;
 
-import labs_examples.packages.labs.JcProperties;
+import labs_examples.packages.labs.Property;
 
-public class Sfr extends JcProperties {
+public class Sfr extends Property {
     int bedrooms;
     double bathrooms;
     String constructionType;
