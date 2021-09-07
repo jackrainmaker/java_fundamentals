@@ -2,18 +2,14 @@ package labs_examples.packages.labs;
 
 public class Property {
 
-    public static void main(String[] args) {
 
-    }
 
-    protected static String address;
-    protected static int levels;
-    protected static int squareFootage;
-    protected static int lotSize;
-    protected static int price;
+    protected String address;
+    protected int levels;
+    protected int squareFootage;
+    protected int lotSize;
+    protected int price;
 
-    public Property() {
-    }
 
     public Property(String address, int levels, int squareFootage, int lotSize, int price) {
         this.address = address;
@@ -21,70 +17,61 @@ public class Property {
         this.squareFootage = squareFootage;
         this.lotSize = lotSize;
         this.price = price;
+    }
+
+    public Property() {
 
     }
 
-    public static String getaddress() {
+
+
+    public String getAddress() {
         return address;
     }
 
-
-    public static String getAddress() {
-        return address;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public static void setAddress(String address) {
-        Property.address = address;
-    }
-
-    public static int getLevels() {
+    public int getLevels() {
         return levels;
     }
 
-    public static void setLevels(String levels) {
-        Property.levels = levels;
+    public void setLevels(int levels) {
+        this.levels = levels;
     }
 
-    public static int getSquareFootage() {
+    public int getSquareFootage() {
         return squareFootage;
     }
 
-    public static void setSquareFootage(String squareFootage) {
-        Property.squareFootage = squareFootage;
+    public void setSquareFootage(int squareFootage) {
+        this.squareFootage = squareFootage;
     }
 
-    public static int getLotSize() {
+    public int getLotSize() {
         return lotSize;
     }
 
-    public static void setLotSize(String lotSize) {
-        Property.lotSize = lotSize;
+    public void setLotSize(int lotSize) {
+        this.lotSize = lotSize;
     }
 
-    public static int getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public static void setPrice(String price) {
-        Property.price = price;
-    }
-
-    protected static int pricePerFootBuilding(int price, int squareFootage) {
-        return price / squareFootage;
-    }
-
-    protected static int pricePerFootLot(int price, int lotSize) {
-        return price / lotSize;
+    public void setPrice(int price) {
+        this.price = price;
     }
 
     @Override
-    public static String toString() {
+    public String toString() {
         return "Property Address " + address + '\'' +
                 "levels=" + levels + '\'' +
                 ", squareFootage=" + squareFootage + '\'' +
                 ", lotSize='" + lotSize + '\'' +
                 ", price" + price;
     }
-
 }
 
